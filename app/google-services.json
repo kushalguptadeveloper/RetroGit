@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "52337649959",
+    "firebase_url": "https://retrogit-f9b1f.firebaseio.com",
+    "project_id": "retrogit-f9b1f",
+    "storage_bucket": "retrogit-f9b1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52337649959:android:c5ec04a2b561402f",
+        "android_client_info": {
+          "package_name": "com.example.kushalgupta.retrogit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52337649959-2c6mhflegcdnsglshunvn2j7c5g2q43c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kushalgupta.retrogit",
+            "certificate_hash": "0105561c446773ad036e9a567a4114055fa4b725"
+          }
+        },
+        {
+          "client_id": "52337649959-k1rjamh5ior6lptk9hb3ci18g5h4emki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_SKY65Oy7oIw_RkiOwG5sIqK5j6ZaliQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52337649959-k1rjamh5ior6lptk9hb3ci18g5h4emki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

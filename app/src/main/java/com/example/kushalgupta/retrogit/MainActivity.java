@@ -18,15 +18,17 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
+    public int j=1;
 private String ClientID="864005b887ce24808fec";
 private String ClientSecret="53361d192496390469d7319a791d32c5ae5fb02d";
-private String redirectUrl="https://retrogit-203bc.firebaseapp.com/__/auth/handler";
-    private FirebaseAuth mAuth;
+//private String redirectUrl="https://retrogit-203bc.firebaseapp.com/__/auth/handler";
+  private String  redirectUrl="myapp://callback";
+   // private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
 
-        mAuth = FirebaseAuth.getInstance();
+//        mAuth = FirebaseAuth.getInstance();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -50,7 +52,13 @@ private String redirectUrl="https://retrogit-203bc.firebaseapp.com/__/auth/handl
 accessTokenCall.enqueue(new Callback<AccessToken>() {
     @Override
     public void onResponse(Call<AccessToken> call, Response<AccessToken> response) {
+
+        if(j==1){
         Toast.makeText(MainActivity.this, "got token", Toast.LENGTH_SHORT).show();
+        Intent i=new Intent(MainActivity.this,Main2Activity.class);
+        startActivity(i);
+        j=0;
+        }
 
     }
 
@@ -65,5 +73,9 @@ accessTokenCall.enqueue(new Callback<AccessToken>() {
         }
     }
 
-   
+
 }
+/*
+android:scheme="https"
+        android:host="retrogit-203bc.firebaseapp.com"
+        android:path="/__/auth/handler"/>*/
